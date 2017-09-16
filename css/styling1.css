@@ -1,0 +1,159 @@
+body{
+  font-family: 'Benchnine';
+  letter-spacing: 1px;
+}
+h4{
+     font-family: 'BioRhyme Expanded';
+    color:#307C94;
+    }
+
+.navbar{
+	height: 55px;
+	background-color: #307C94; 
+	border-radius: 0px;
+
+        
+
+}
+
+.navbar-brand img{
+	width: 160px;
+	height: 45px;
+    position: relative;
+    top: -10px;
+	padding-left: 30px;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(119, 119, 119, 1);
+}
+#custom-bootstrap-menu.navbar-default {
+    background-color: rgba(48, 124, 148, 1);
+    border-width: 0px;
+    border-radius: 0px;
+  
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>li{
+
+    padding-right: 10px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(48, 124, 148, 1);
+    font-size: 18px;
+    color: #fff;
+
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(48, 124, 148, 1);
+    background-color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    border-bottom: 5px solid #ED9C28;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+  
+     color: #FFF;
+    border-bottom: 5px solid #ED9C28;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #e6e1e1;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #e6e1e1;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #e6e1e1;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #307c94;
+}
+#show {
+            background:#307C94;
+            transition:all 0.2s ease;
+            display: none; 
+            position: absolute; 
+            border-style: outset;
+            z-index: 1;
+            margin-left : 75%;
+            padding: 8px;
+            border-top:2px solid white;
+            margin-top:56px;  
+            overflow: hidden;        
+    }
+
+#show .p1 { 
+     margin-top:30px;
+     color: white;
+     font-size: 13px;
+      font-weight: bold;
+}
+#show .p2{  
+    font-size: 11px; 
+    color:white;
+    font-weight: bold;
+}
+
+#profile-img {
+     width: 100px;
+    height: 110px;
+} 
+
+#profile-img img{
+    width: 100px;
+    height: 110px;
+}
+#setting-btn{
+    float: right; 
+    
+     border-radius: 50%;
+    font-size: 16px;
+    padding: 4px 8px 4px 8px;
+     
+}
+
+#logout-btn{
+    float: right;
+    
+     width: 75px;
+      padding: 4px 6px 4px 6px;
+     
+}
+#profile-btn{
+     
+    width: 75px;
+    padding: 4px 6px 4px 6px;
+}
+
+/*************************
+*******Header CSS******
+**************************/
+
+
+#feed{
+	width: 100%;
+	overflow: hidden;
+}
+
+#addv{
+    width: 100%;
+    height: 200px;
+    
+}
+/*************************
+*******Feed CSS******
+**************************/
+
+#footer {
+        background-color: rgba(48, 124, 148, 1);
+        color: white;
+        overflow: hidden;
+        height: 50px;
+        position: relative;
+        bottom: 0px;
+    }

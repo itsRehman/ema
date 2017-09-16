@@ -1,0 +1,381 @@
+* {
+	box-sizing: border-box;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 1.7em;
+	height: 100%;
+	width: 100%;
+}
+body li {
+	list-style: none;
+}
+h1,
+h2,
+h4 {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+body p {
+	font-size: 14px;
+	line-height: 1.7em;
+	letter-spacing: 1px;
+}
+.btn{
+	width: 70px;
+	padding: 2px;
+	font-size: 13px;
+	letter-spacing: 2px;
+}
+.navbar-default {
+	background: #307C94;
+	border: 0;
+	border-radius: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	overflow: hidden;
+}
+.navbar-default .navbar-brand {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	color: #FFFFFF;
+	opacity: 0.6;
+	transition: all .4s ease-in-out;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+	color: #FFFFFF;
+	opacity: 1;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 14px;
+  opacity: 0.5;
+  transition: all .4s ease-in-out;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	opacity: 1;
+	color: #307C94;
+	background-color: #FFFFFF;
+}
+.navbar-default .navbar-nav .active {
+	background-color: #33A1C9;
+	opacity: 1;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: #307C94;
+	background-color: #FFFFFF;
+	opacity: 1;
+}
+.navbar-default .navbar-toggle {
+	border-color: #FFFFFF;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: #33A1C9;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	color: #FFFFFF;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+	color: #33A1C9;
+}
+
+/*Navigation Style Ends*/
+
+/*Header Style*/
+.header {
+	margin-top: 50px;
+	background-color: #33A1C9;
+}
+.header h4 {
+	padding: 10px;
+	text-transform: capitalize;
+	color: #FFFFFF;
+}
+.header h4 small {
+	color: #737373;
+}
+/*Header Style Ends*/
+
+/*======= ADMIN LOGIN PAGE Style Starts HERE=========*/
+
+/*Login Style*/
+
+.login {
+	margin-top: 100px;
+}
+.login .panel-default {
+	box-shadow: 10px 10px 5px #BFBFBF; 
+
+}
+.login .panel-heading {
+	background-color: #33A1C9;
+	color: #FFFFFF;
+	text-align: center;
+}
+.login .panel-body h5 {
+	font-weight: bold;
+	color: #307C94;
+	text-align: center;
+	padding: 15px 0 5px;
+}
+.login .panel-body input[type="text"], input[type="Password"] {
+	width: 45%;
+	margin-left: 28%;
+	border: none;
+	border-radius: 0;
+	border-bottom: 2px solid #33A1C9;
+	font-size: 1.1em;
+	font-family: "Segoe Script";
+	text-align: center;
+	color: #1E1E1E;
+}
+.login .panel-body input[type="text"], input[type="Password"]:focus {
+	outline: 0;
+}
+.login .btn {
+	margin-left: 42%;
+	margin-top: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	letter-spacing: 2px;
+	background-color: #33A1C9;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 0;
+	transition: all .4s ease-in-out;
+}
+.login .btn:hover {
+	background-color: #307C94;
+	color: #FFFFFF;
+}
+/*Login Style Ends*/
+/*======== LOGIN PAGE Style Ends HERE========*/
+/*Main Style*/
+.main {
+	margin-top: 30px;
+
+}
+.main .active {
+	background-color: #307C94;
+}
+.main .list-group-item:hover {
+	background-color: #33A1C9;
+	color: #FFFFFF;
+}
+.main .well {
+	color: #4C4C4C;
+	padding: 40px 0 60px;
+	background-color: none;
+	box-shadow: 10px 10px 5px #BFBFBF;
+	transition: all .5s ease-in-out;
+}
+.main .well:hover {
+	 transform: translate(50px,100px);
+}
+.main .well h1,
+.main .well b,
+.main .well h4 {
+	text-shadow: 1px 1px 15px #307C94, 0px 0px 25px #33A1C9;
+	letter-spacing: 1.1em;
+}
+.main .well h1 {
+	padding-bottom: 40px;
+
+}
+.main .well h4 {
+	margin-top: 40px;
+}
+/*Media query for .Main/ .Well/ h4,h1,b*/
+@media(max-width: 768px) {
+	.main .well h4,
+	.main .well h1,
+	.main .well b {
+		letter-spacing: 0.3em;
+	}
+
+}
+/*Main Style Ends*/
+
+/*Footer Style*/
+.footer {
+	background-color: #307C94;
+	color: #FFFFFF;
+	text-align: right;
+	height: 55px;
+	padding: 15px;
+	margin-top: 120px;
+	overflow: hidden;
+}
+/*Footer Style Ends*/
+
+/*=====WELCOME PAGE Style Ends HERE=======*/
+
+/*=====USER PAGE Style Starts HERE=======*/
+
+/*Main-User/ Panel/ Sidebar/ Table Style*/
+.main-user .active {
+	background-color: #307C94;
+}
+.main-user .list-group-item:hover {
+	background-color: #33A1C9;
+	color: #FFFFFF;
+}
+.main-user {
+	margin-top: 100px;
+}
+.main-user .panel-body {
+	color: #4C4C4C;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+.main-user .panel-heading {
+	background-color: #307C94;
+}
+.main-user .panel-heading h4 {
+	color: #FFFFFF;
+	text-transform: capitalize;
+}
+.main-user .panel-body .table thead {
+	font-size: 14px;
+	font-weight: bold;
+	color: #307C94;
+}
+.main-user .panel-body .table img {
+	width: 50px;
+	height: 50px;
+}
+.main-user .panel-body .table .btn:hover {
+	transition: all .4s ease-in-out;
+}
+/*Main-User/ Panel/ Table Style Ends*/
+
+/*=====USER PAGE Style Ends HERE=======*/
+
+/*=====EVENTS PAGE Style Starts HERE=======*/
+/*Main-Events/ Panel/ Sidebar/ Style*/
+.main-events {
+	margin-top: 100px;
+}
+.main-events .active {
+	background-color: #307C94;
+}
+.main-events .list-group-item:hover {
+	background-color: #33A1C9;
+	color: #FFFFFF;
+}
+.main-events .panel{
+	padding: 5px;
+}
+.main-events .panel-heading {
+	background-color: #307C94;
+	color: #FFFFFF;
+}
+.panel-body .image h5 {
+	color: #4C4C4C;
+	font-weight: bold;
+}
+ .pic-col-div{
+	border-bottom: 2px solid gray;
+}
+.panel-body .image {
+	margin-right: 40px;
+}
+.main-events .panel-body .btn:hover {
+	transition: all .4s ease-in-out;
+}
+
+.main-events .date {
+	margin-top: 30px;
+	padding-bottom: 15px;
+}
+.main-events .date .btn:hover {
+	transition: all.4s ease-in-out;
+}
+.main-events .date h5 {
+	color: #4C4C4C;
+	font-weight: bold;
+}
+.main-events .date2 h5 {
+	color: #4C4C4C;
+	font-weight: bold;
+}
+.main-events .date h6 {
+	color: #307C94;
+	font-weight: bold;
+}
+.main-events .date2 h6 {
+	color: #307C94;
+	font-weight: bold;
+}
+.main-events .date2 .btn:hover {
+	transition: all .4s ease-in-out;
+}
+/*Main-Events/ Panel/ Sidebar/ Style Ends*/
+
+/*=====EVENTS PAGE Style Ends HERE=======*/
+
+
+/*=====SUGGESTIONS PAGE Style Starts HERE=======*/
+
+/*Main-Suggestion/ Panel/ Sidebar Style Starts*/
+.main-suggestions {
+	margin-top: 100px;
+}
+.main-suggestions .list-group .active {
+	background-color: #307C94;
+}
+.main-suggestions .list-group-item:hover {
+	background-color: #33A1C9;
+	color: #FFFFFF;
+}
+.main-suggestions .panel-heading {
+	background-color: #307C94;
+}
+.main-suggestions .panel-heading h4 {
+	color: #FFFFFF;
+	text-transform: capitalize;
+}
+.main-suggestions .panel-body {
+	color: #4C4C4C;
+	background-color: #F6F6F6;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+.main-suggestions .panel-body .table img {
+	width: 50px;
+	height: 50px;
+}
+.main-suggestions .panel-body .table thead td {
+	font-size: 14px;
+	font-weight: bold;
+	color: #307C94;
+	border: 0;
+}
+.main-suggestions .panel-body .table .btn:hover {
+	transition: all .4s ease-in-out;
+}
+
+/*Main-Suggestion/ Panel/ Sidebar Style Ends*/
+
+/*=====SUGGESTIONS PAGE Style Ends HERE=======*/
+
+/*=====ORGANIZERS PAGE Style start HERE=======*/

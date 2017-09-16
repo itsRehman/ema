@@ -1,0 +1,27 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>msging </title>
+	<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+			<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<style type="text/css">
+
+		body{
+			width: 400px;
+			height: 400px;
+		}
+	</style>
+</head>
+<body>
+<div class="row">
+	<div class="col-md-12">
+		Test
+	</div>
+</div>
+
+</body>
+</html>

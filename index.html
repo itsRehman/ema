@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="">
+    <title>Event management system</title>
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">	
+	<link href="css/responsive.css" rel="stylesheet">
+	
+<link href='https://fonts.googleapis.com/css?family=BioRhyme Expanded' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=BenchNine' rel='stylesheet'>
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	
+	 <style type="text/css">
+    #home {
+  position: relative;
+  overflow: hidden;
+  height: 678px;
+}
+  #particles-js{
+   width: 100%;
+  height: 100%;
+  background-color: #2B718C;
+  background-image: url('images/slider/event1.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+    .carousel-caption{
+     
+  border-radius: 20px;
+  bottom: 30%;
+  left: 20%;
+  opacity: ;
+  padding:10px 20px 10px;
+  right: inherit;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: left;
+  background-color: #FDEE9B ;
+  opacity: 0.9;
+}
+    .carousel-caption a {
+  font-size: 22px;
+  color: white
+}
+.carousel-caption a:hover {
+  color: #2588a6
+}
+.carousel-caption a:hover i {
+  margin-left: 35px
+}
+
+/* ,,,,,,,,,,,, scroll bar styling ,,,,,,,,,, */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #286E88; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: #286E88; 
+}
+/* ,,,,,,,,,,,, scroll bar styling end ,,,,,,,,,, */
+
+#map{
+	  
+	min-height: 400px;
+	color: black;
+}
+
+
+    </style>
+
+
+    
+</head><!--/head-->
+
+<body>
+	<header id="header" role="banner">		
+		<div class="main-nav">
+			<div class="container">
+				<div class="header-top">
+					<div class="pull-right social-icons">
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+						<a href="#"><i class="fa fa-youtube"></i></a>
+					</div>
+				</div>     
+		        <div class="row">	        		
+		            <div class="navbar-header">
+		                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		                    <span class="sr-only">Toggle navigation</span>
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                </button>
+		                
+		                <a class="navbar-brand" href="index.html">
+		                	  <img class="img-responsive" src="images/emanew2.png" alt="logo"> 
+		                </a>  
+		                                 
+		            </div>
+		            <div class="collapse navbar-collapse">
+		                <ul class="nav navbar-nav navbar-right">                 
+		                    <li class="scroll active"><a href="#home">Home</a></li>
+		                    <li class="scroll"><a href="#explore">Explore</a></li>                         
+		                    <li class="scroll"><a href="#event">Event</a></li>
+		                    <li class="scroll"><a href="#about">About</a></li>  
+		                    <li class="scroll"><a href="#contact">Contact</a></li>
+		                    <li class="scroll"><a href="#twitter">Creators</a></li>       
+		                </ul>
+		            </div>
+		        </div>
+	        </div>
+        </div>                    
+    </header>
+    <!--/#header--> 
+
+    <section id="home">	
+	
+	
+	
+    <div id="particles-js" style=""></div>
+<div class="carousel-caption slides1">
+						
+						<a href="login_signup.html" style="font-family: 'BioRhyme Expanded';">Get Started <i class="fa fa-angle-right"></i></a>
+					</div>
+	
+	
+	<!--
+		<div id="main-slider" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#main-slider" data-slide-to="0" class="active"></li>
+				<li data-target="#main-slider" data-slide-to="1"></li>
+				<li data-target="#main-slider" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img class="img-responsive" src="images/slider/event1.jpg" alt="slider">						
+					<div class="carousel-caption slides1">
+						
+						<a href="login_signup.html">Get Started<i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+				<div class="item">
+					<img class="img-responsive" src="images/slider/event2.jpg" alt="slider">	
+					<div class="carousel-caption slides2">
+						<a href="login_signup.html">Get Started<i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+				<div class="item">
+					<img class="img-responsive" src="images/slider/event3.jpg" alt="slider">	
+					<div class="carousel-caption slides3">
+						
+						<a href="login_signup.html" >Get Started<i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>				
+			</div>
+		</div> -->    	
+    </section>
+	<!--/#home-->
+
+	<section id="explore">
+		<div class="container">
+			<div class="row">
+				<div class="watch">
+					<img class="img-responsive" src="images/watch.png" alt="">
+				</div>				
+				<div class="col-md-4 col-md-offset-2 col-sm-5">
+					<h4 style="font-size: 26px;">O yeah ! EMA is coming</h4>
+				</div>				
+				<div class="col-sm-7 col-md-6">					
+					<ul id="countdown">
+						<li>					
+							<span class="days time-font">00</span>
+							<p>days </p>
+						</li>
+						<li>
+							<span class="hours time-font">00</span>
+							<p class="">hours </p>
+						</li>
+						<li>
+							<span class="minutes time-font">00</span>
+							<p class="">minutes</p>
+						</li>
+						<li>
+							<span class="seconds time-font">00</span>
+							<p class="">seconds</p>
+						</li>				
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</section><!--/#explore-->
+
+	<section id="event">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-9">
+					<div id="event-carousel" class="carousel slide" data-interval="false">
+						<h2 style="font-size: 24px;" class="heading">BEST EVENT organizer's</h2>
+						<a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+						<a class="even-control-right" href="#event-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/eve1.jpg" alt="event-image">
+											<h4 style="font-size: 16px;">EVENTO'S . ORG</h4>
+											<h5>Event's Organizers</h5>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/eve2.jpg" alt="event-image">
+											<h4 style="font-size: 16px;">SIGMA & COMPANY</h4>
+											<h5>Wedding planner's</h5>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/eve3.jpg" alt="event-image">
+											<h4 style="font-size: 16px;">BRUETO'S </h4>
+											<h5>Concerts Organizer's</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/eve1.jpg" alt="event-image">
+											<h4>EVENTO'S . ORG</h4>
+											<h5>Event's Organizers</h5>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/eve2.jpg" alt="event-image">
+											<h4>SIGMA & COMPANY</h4>
+											<h5>Wedding planner's</h5>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/eve3.jpg" alt="event-image">
+											<h4>BRUETO'S</h4>
+											<h5>Concerts Organizer's</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>			
+		</div>
+	</section><!--/#event-->
+
+	<section id="about">
+	
+	<div class="guitar2">				
+		</div> 
+		<div class="about-content">					
+					<h3>About EMA</h3>
+					<p>We have created an extremely positive and relaxed environment all geared towards developing your skills whether you are an absolute beginner trying to get off the ground or an accomplished autopreneur looking to move to the next level.</p>
+					<a href="login_signup.html" class="btn btn-primary" >Get Register Now <i class="fa fa-angle-right"></i></a>
+				
+		</div>
+
+	</section><!--/#about-->
+	
+
+
+	<section id="contact">
+
+
+		<div class="contact-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 contact-half" style="border-right: 2px solid black;">
+						<div class="contact-text">
+							<h4> <STRONG>Contact</STRONG></h4>
+							<address style="color: white; font-size: 1.1em;">
+								Email: ema@gmail.com<br>
+							</address>
+						</div>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<div class="contact-address">
+							<h4><strong>Address</strong></h4>
+							<address style="color: white; font-size: 1.1em;">
+								University of Malakand,<br>
+								Malakand kp<br>
+								Pakistan
+							</address>
+						</div>
+					</div>
+					<div class="col-sm-5">
+						<div id="contact-section">
+							<h4><strong>Appreciate suggestions</strong></h4>
+					    	<div class="status alert alert-success" style="display: none"></div>
+					    	<form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+					            <div class="form-group">
+					                <input type="text" name="name" class="form-control" required="required" placeholder="Name">
+					            </div>
+					            <div class="form-group">
+					                <input type="email" name="email" class="form-control" required="required" placeholder="Email ID">
+					            </div>
+					            <div class="form-group">
+					                <textarea name="message" id="message" required="required" class="form-control" rows="4" placeholder="Enter your message"></textarea>
+					            </div>                        
+					            <div class="form-group">
+					                <button type="submit" class="btn btn-primary pull-right">Send</button>
+					            </div>
+					        </form>	       
+					    </div>
+					</div>
+					<div class="col-sm-4" id="map">
+						
+			<!--/#map-->
+
+					
+				</div>
+			</div>
+		</div>		
+	</section>
+    <!--/#contact-->
+
+    <section id="twitter">
+		<div id="twitter-feed" class="carousel slide" data-interval="false">
+			<div class="text-center">
+                <h2><strong>EMA Maker's</strong></h2>                
+            </div>
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<div class="text-center carousel-inner center-block">
+						<div class="item active">
+							<img src="images/twitter/jehangir.png" alt="">
+							<h3><strong> Creators</strong> </h3>
+							<a href="#"> Jehangir Muhammad Khan (Supervisor)</a>
+						</div>
+						<div class="item ">
+							<img src="images/twitter/ab2.jpg" alt="">
+							<h3><strong>Creators</strong> </h3>
+							<a href="#"> Muhammad Rahman </a>
+						</div>
+						<div class="item">
+							<img src="images/twitter/ABB.png" alt="">
+							<h3><strong>Creators</strong>  </h3>
+							<a href="#"> Abbas Ahmad</a>
+						</div>
+					</div>
+					<a class="twitter-control-left" href="#twitter-feed" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+					<a class="twitter-control-right" href="#twitter-feed" data-slide="next"><i class="fa fa-angle-right"></i></a>
+				</div>
+			</div>
+		</div>		
+	</section><!--/#twitter-feed-->
+
+	 <footer id="footer">
+        <div class="container">
+            <div class="text-center">
+                <p>Developed By Muhammad Rahman and Abbas Ahmad Under Supervision of Jehangir Muhammad khan.</p>  <span style="float: right;">CopyRight &copy; 2017</span>               
+            </div>
+        </div>
+    </footer>
+
+  
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script src="js/particles/particles.js"></script>
+	<script src="js/particles/app.js"></script>
+
+	 
+	<script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax.js"></script>
+    <script type="text/javascript" src="js/coundown-timer.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="js/jquery.nav.js"></script>
+	<script type="text/javascript" src="js/main.js"></script> 
+	
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+
+
+    <script>
+      // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+      var map, infoWindow;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 6
+        });
+        infoWindow = new google.maps.InfoWindow;
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            infoWindow.open(map);
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAepSvAg042Cm6kRyWvAb1LiMnkojgtqM0&callback=initMap">
+    </script>	
+</body>
+</html>

@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ema Login/signup</title>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/password.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/styling.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link href='https://fonts.googleapis.com/css?family=BioRhyme Expanded' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=BenchNine' rel='stylesheet'>
+
+	<style>
+ 
+ body{
+	font-family: 'BenchNine';
+	letter-spacing: 1px;
+}
+  #nameerror1{
+ color:red;
+ font-size:90%; !important;
+ }
+ #namesuccess1{
+ color:green;
+ font-size:90%; !important;
+ }
+   #nameerror2{
+ color:red;
+ font-size:90%; !important;
+ }
+ #namesuccess2{
+ color:green;
+ font-size:90%; !important;
+ }
+    #numbererror{
+ color:red;
+ font-size:90%; !important;
+ }
+ #numbersuccess{
+ color:green;
+ font-size:90%; !important;
+ }
+  #emailerror{
+ color:red;
+ font-size:18px;
+ }
+ #emailsuccess{
+ color:green;
+ font-size:18px !important;
+ }
+ #confpwderror{
+ color:red;
+ font-size:90%; !important;
+ }
+ #confpwdsuccess{
+ color:green;
+ font-size:18px;
+ }
+ #dateofdoberror{
+ color:red;
+ font-size:90%; !important;
+ }
+ #dateofdobsuccess{
+ color:green;
+ font-size:90%; !important;
+ }
+ 
+/*,,,,,, sign up with google ,,,,,,,,,, */
+
+#login_form{
+
+}
+.form-group .form-control{
+	border-radius: 0;
+	border: 0;
+	border-bottom: 2px solid  #196E88;
+	box-shadow: none;
+	background: white;
+	width: 400px;
+}
+.form-group .form-control:focus{
+	border-radius: 0;
+	border: 0;
+	border-bottom: 2px solid  #AAAAAA;
+	background: white;
+	box-shadow: none;
+}
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  width: 22em;
+  height: 3em;
+  margin: 2em;
+  margin-left: 25%;
+  padding: 0 15px 0 46px;
+  border: none;
+  text-align: center;
+  line-height: 34px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 18px;
+  color: #FFF;
+  font-family: 'BenchNine';
+}
+.loginBtn:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+.loginBtn:focus {
+  outline: none;
+}
+.loginBtn:active {
+  box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+}
+
+.typewriter h4 {
+   
+  
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(36, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 70% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #fff }
+}
+
+
+/* Facebook */
+.loginBtn--facebook {
+  background-color: #4C69BA;
+  background-image: linear-gradient(#4C69BA, #3B55A0);
+  /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+  text-shadow: 0 -1px 0 #354C8C;
+  -webkit-animation: mymove 3s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 3s infinite;
+}
+ @-webkit-keyframes mymove {
+    50% {box-shadow: 10px 15px 25px #318CE7;}
+}
+
+/* Standard syntax */
+ @keyframes mymove {
+    50% {box-shadow: 10px 15px 25px #318CE7;}
+}
+
+.loginBtn--facebook:before {
+  border-right: #364e92 1px solid;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png') 8px 15px no-repeat;
+}
+.loginBtn--facebook:hover,
+.loginBtn--facebook:focus {
+  background-color: #5B7BD5;
+  background-image: linear-gradient(#5B7BD5, #4864B1);
+}
+
+
+/* Google */
+.loginBtn--google {
+  /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+  background: #DD4B39;
+  -webkit-animation: mykove 3s infinite; /* Chrome, Safari, Opera */
+    animation: mykove 3s infinite;
+}
+
+ @-webkit-keyframes mykove {
+    50% {box-shadow: 10px 15px 25px #FE4D4D;}
+}
+
+/* Standard syntax */
+ @keyframes mykove {
+    50% {box-shadow: 10px 15px 25px #FE4D4D;}
+}
+
+.loginBtn--google:before {
+  border-right: #BB3F30 1px solid;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png') 8px 15px no-repeat;
+}
+.loginBtn--google:hover,
+.loginBtn--google:focus {
+  background: #E74B37;
+}
+.builld{
+	text-align : center; 
+	margin-bottom: 10px;
+	font-weight: bolder;
+	color: #307C94;
+}
+
+.fire-base{
+	margin-bottom:30px;
+	background-position:center 35px;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+/*,,,,,, sign up with google ,,,,,,,,,, */
+::-webkit-input-placeholder{
+	font-family: 'BenchNine';
+	letter-spacing: 1px;
+}
+ .form-control::placeholder{
+	font-family: 'BenchNine';
+	letter-spacing: 1px;
+}
+.first-name{
+	font-size: 18px;
+	font-weight: bolder;
+}
+.form-group{
+	font-size: 16px
+}
+ </style>
+
+  
+</head>
+<body>
+<div class="jumbotron" id="header">
+	<div class="row">
+		<div class="col-md-7">
+			<div id="logo">
+			<a href="index.html"><img src="images/emanew2.png" class="img-responsive"></a>
+		</div>
+		</div>
+		<div class="col-md-2">
+			
+		</div>
+		<div class="col-md-3">
+			<div id="login_form" class="form-group nav navbar-right">
+			<form class="form-inline" name="loginform" method="post" action="login.php" onsubmit="return validatelogin();">
+				<table>
+					<tbody>
+		<tr>
+				<td><label for="email"> Email</label></td><td><label for="pwd">Password</label></td>
+		</tr>
+		<tr>
+						<td>
+	  		<div class="form-group">
+	    		<input type="email" class="form-control" name="email" id="emaillogin" placeholder="Enter your email ...">
+	  		</div>
+	  	</td>
+	  	<td>
+	  		<div class="form-group" style="padding-left: 2px;">
+	    		<input type="password" class="form-control" name="password" id="pwdlogin" placeholder="Enter your password ...">
+	  		</div>
+		</td>    
+						<td>
+							<div class="form-group" style="padding-left: 2px;">
+							
+	    		<button type="submit" class="btn btn-info" name="login" value="Log In" id="login_button">Log In </button>
+	    	
+	  		</div>
+						</td>
+						</tr>
+						<tr>
+							<td>
+							<div class="checkbox">
+    <label><input type="checkbox" name="remember"> Remember me</label>
+  </div>
+
+							</td>
+							<td id="forgot">
+								<a href="#">Forgotten your account ? </a>  
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+		</div>
+		</div>
+	</div>
+</div>	
+
+<!--................................... End of header div.............................. -->	
+<div class="container" style="overflow: hidden;">
+	<div class="row">
+			<div class="col-md-5 fire-base typewriter">
+		<h3 class="builld"><strong style="font-size: 34px;">Builld your own type of event </strong></h3>
+			<h4 class="builld"  > <span> We do not <b style="color: green">Sell Or Share</b> your Data ... </span></h4>
+			<br>
+			<!-- 
+			<button class="loginBtn loginBtnfacebook">
+  Login with Facebook
+</button>
+<br>
+
+<button class="loginBtn loginBtngoogle">
+  Login with Google
+</button>
+-->
+<img src="images/1.jpg">
+
+<br>
+		</div>
+
+<div class="col-md-7">
+ 
+
+<form class="form-horizontal" id="form-bottom" name="signupform" method="post" action="signup.php" onsubmit=" return validatedata();" >
+<div class="row">
+	<div class="col-md-12">
+		<h4 align="center" style="color: #196E88; float: right; font-weight: bolder; font-size: 32px;">Sign up here </h4> 
+	</div>
+</div>
+ <div class="row">
+ 	<div class="col-md-6">
+ 		<div class="row">
+ 			<div class="col-sm-5 form-group">
+ 				<label class="control-label first-name" for="text"> First name</label>
+ 			</div>	
+		    <div class="col-sm-7 form-group">
+		        <input type="text" class="form-control" name="fristname"   id="name1" oninput="fristnamevalidat();"  placeholder="Jhon" maxlength="15" rquired /><span id="nameerror1"></span><span id="namesuccess1"></span>
+		    </div>
+	   	</div>
+ 	</div>
+ 	<div class="col-md-6">
+ 		<div class="row">
+ 			<div class="col-sm-5 form-group">
+ 				<label class="control-label first-name" for="text"> Last name</label>
+ 			</div>
+		    	
+		    <div class="col-sm-7 form-group">
+		      	<input type="text" class="form-control" name="lastname" id="name2" oninput="lastnamevalidat();" placeholder="Dove" maxlength="15" rquired /><span id="nameerror2"></span><span id="namesuccess2"></span>
+		    </div>
+    	</div>
+ 	</div>
+ </div>
+
+	   
+
+<br>
+
+<div class="row">
+	<div class="col-md-2">
+		
+	</div>
+	<div class="col-md-10">
+		
+			<div class="col-sm-4">
+				<label class="control-label form-group" for="email">Enter email</label>
+			</div>
+		    <div class="col-sm-6 form-group">
+		      <input type="email" class="form-control"   name="email" id="useremail" oninput="emailvalidat();" placeholder="email@example.co" rquired maxlength="30" />
+		    </div>
+		    <div class="col-sm-2">
+		    	<span id="emailerror"></span><span id="emailsuccess"></span>
+		    </div>
+		    
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-2">
+		
+	</div>
+	<div class="col-md-10">
+			
+				<div class="col-sm-4">
+					<label class="control-label form-group" for="pwd">Enter password</label>
+				</div>
+
+	    		<div class="col-sm-6 form-group"> 
+	      			<input type="password" name="password" class="form-control" id="status"  placeholder="Make your password strong " rquired maxlength="15" />
+				</div>	
+				<div class="col-sm-2">
+					<span class="first"></span>
+				</div>	
+    	
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-2">
+		
+	</div>
+	<div class="col-md-10">
+		
+			<div class="col-md-4">
+				<label class="control-label  form-group" for="pwd">Password again</label>
+			</div>
+    			
+    		<div class="col-md-6 form-group"> 
+      			<input type="password" class="form-control" name="confpassword" id="confpwd" oninput="conf();"  placeholder="Confirm  your password " maxlength="15" rquired /><span id="confpwderror"></span>
+    		</div>
+    		<div class="col-sm-2">
+    			<span id="confpwdsuccess"></span>
+    		</div>
+		
+	</div>
+</div>
+
+
+
+<div class="row">
+	
+	<div class="col-md-offset-1 col-md-7">
+		<div class="form-group"> 
+			<div class="col-sm-3 col-sm-offset-2">
+				<label class="control-label " > Gender </label>
+			</div>
+				
+			<div class="col-sm-5 col-sm-offset-2"> 
+	    		<label><input type="radio" name="gender" value="male" id="male"> Male </label> <br>
+        		<label><input type="radio" name="gender" value="female" id="female"> Female </label>
+        	</div>
+    	</div>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="col-md-5">
+		
+	</div>
+	<div class="col-md-7">
+		<div class="form-group">
+			<div class="col-sm-4">
+				<label class="control-label"> <strong>Date of birth</strong> </label>
+			</div> 
+        		
+        	<div class="col-sm-6">
+         		<input type="Date" name="dob" id="dateofdob" oninput="dateofbirthvalidat();" rquired><span id="dateofdoberror"></span><span id="dateofdobsuccess"></span>
+        	</div>
+  		</div>
+	</div>
+</div>
+
+
+<div class="row">
+	  <div class="form-group"> 
+  <div class="col-sm-offset-6 col-sm-6">
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; By clicking <span style="color: #449D44;">Create Account</span>. 
+  <br> You agree our <a href="#" class="policy"> Terms </a> and you read our <a href="#" class="policy">Policy</a>. </p>
+      <button type="submit" class="btn btn-success create_button" name="signup" id="create_button">Create Account</button>
+    </div>
+  </div>
+</div>
+
+ 	
+
+
+ 
+
+</form>
+</div>
+
+		
+
+
+	</div>
+</div>
+<!--.........................................body div End -->
+ 
+
+
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDp-F-CPtcxiD4GAVrNmxmVg_eTLE8zVf0",
+    authDomain: "ema-project-817c9.firebaseapp.com",
+    databaseURL: "https://ema-project-817c9.firebaseio.com",
+    projectId: "ema-project-817c9",
+    storageBucket: "",
+    messagingSenderId: "1049263695940"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript">
+	var spanWidth = $('#textt span').width();
+$('#textt').animate( { width: spanWidth }, 3000 );
+</script>
+ 
+</body>
+</html>
+<script type="text/javascript">
+//validation for frist name
+ function fristnamevalidat(){
+		var nameReg = /^[A-Za-z]+$/;
+      var name1 = $('#name1').val();
+	  var massage = "";
+	  if(nameReg.test(name1)){
+	  massage= " Frist Name is valid";
+            $("#namesuccess1").html(massage); 
+			 $("#nameerror1").html(''); 
+			  
+        }
+		if(!nameReg.test(name1)){
+	  massage= "Frist Name is Invalid";
+            $("#nameerror1").html(massage); 
+			 $("#namesuccess1").html(''); 
+			  
+        }
+		if(name1==""){
+	 $("#nameerror1").html(''); 
+	 $("#namesuccess1").html('');
+	  
+	 }
+	   
+	  }
+//validation for last name
+function lastnamevalidat(){
+		var nameReg = /^[A-Za-z]+$/;
+      var name1 = $('#name2').val();
+	  var massage = "";
+	  if(nameReg.test(name1)){
+	  massage= " Last Name is valid";
+            $("#namesuccess2").html(massage); 
+			 $("#nameerror2").html(''); 
+			  
+        }
+		if(!nameReg.test(name1)){
+	  massage= "Last Name is Invalid";
+            $("#nameerror2").html(massage); 
+			 $("#namesuccess2").html(''); 
+			  
+        }
+		if(name1==""){
+	 $("#nameerror2").html(''); 
+	 $("#namesuccess2").html('');
+	  
+	 }
+	   
+	  }
+// phone number validation
+function numbervalidat(){
+var phone = $('#number').val();
+ if($.isNumeric($("#number").val())==false){
+	  massage = "Phone Numer is Invalid";
+	  $("#numbererror").html(massage); 
+	 $("#numbersuccess").html('');	  
+         }
+		 
+		if($.isNumeric($("#number").val())==true){
+	  massage = "Phone Numer is Valid";
+	  $("#numbererror").html(''); 
+	 $("#numbersuccess").html(massage);	  
+         } 
+		if(phone==""){
+	 $("#numbererror").html(''); 
+	 $("#numbersuccess").html('');
+	  
+	 }
+}
+//email validation
+function emailvalidat(){
+var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+var email = $('#useremail').val();
+var massage = "";
+	  if(emailReg.test(email)){
+	  massage= "   Valid";
+            $("#emailsuccess").html(massage); 
+			 $("#emailerror").html(''); 
+			  
+        }
+		if(!emailReg.test(email)){
+	  massage= " Invalid";
+            $("#emailerror").html(massage); 
+			 $("#emailsuccess").html(''); 
+			  
+        }
+		if(email==""){
+	  $("#emailerror").html(''); 
+	 $("#emailsuccess").html(''); 
+	  
+	 }
+}
+// confirm password
+function conf(){
+var confpass = $("#confpwd").val();
+ massage ="";
+ if( $ ("#status").val() == $ ("#confpwd").val()){
+	  massage = " Matched";
+	  $("#confpwderror").html(''); 
+	  $("#confpwdsuccess").html(massage); 
+	  } 
+if( $ ("#status").val() != $ ("#confpwd").val()){
+	  massage = " Your password does not match";
+	  $("#confpwderror").html(massage); 
+	  $("#confpwdsuccess").html(''); 
+	  } 	   
+	   if(confpass==""){
+	   $("#confpwderror").html(''); 
+	  $("#confpwdsuccess").html(''); 
+	   }
+	   
+}
+//date of brith validate
+function dateofbirthvalidat(){
+var date= $("#dateofdob").val();
+ var d = new Date();
+var dd=d.getFullYear();
+dd-=5;
+ var ddd=dd+"-"+"00"+"-"+"00";
+if(date>ddd){
+$("#dateofdoberror").html('  Invalid');
+$("#dateofdobsuccess").html('');
+} 
+if(date<=ddd){
+ $("#dateofdoberror").html('');
+$("#dateofdobsuccess").html('  Valid');
+
+} 
+if(date==""){
+ $("#dateofdoberror").html('');
+$("#dateofdobsuccess").html('');
+
+} 
+
+}
+//validate form on submition
+
+  function validatedata(){
+  var fristname = document.getElementById('name1').value;
+   var lastname = document.getElementById('name2').value;
+   var number = document.getElementById('number').value;
+   var email = document.getElementById('useremail').value;
+   var password = document.getElementById('status').value;
+   var confpassword = document.getElementById('confpwd').value;
+   var male = document.getElementById('male').checked;
+   var female = document.getElementById('female').checked;
+   var dateofdob=document.getElementById('dateofdob').value;
+    
+		 var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+	  var nameReg = /^[A-Za-z]+$/;
+    var phoneReg =  /^[0-9]+$/;
+       var passReg =  /^[0-9a-zA-Z@$&]+$/;
+		if(fristname==""){
+	   
+            
+			alert(' First name is required');
+			return false;
+        }
+		if(lastname==""){
+	   
+            
+			alert(' Last name is required');
+			return false;
+        }
+		if(number==""){
+	   
+            
+			alert(' Phone number is required');
+			return false;
+        }
+		 if(email==""){
+	   
+            
+			alert(' Email is required');
+			return false;
+        }
+		 if(password==""){
+	   
+            
+			alert(' Password is required');
+			return false;
+        }
+		if(confpassword==""){
+	   
+            
+			alert(' Confirm password is required');
+			return false;
+        }
+		if(male==false && female==false ){
+	   
+            
+			alert(' Select gender');
+			return false;
+        }
+		if(dateofdob==""){
+	   
+            
+			alert(' Date of btith is required');
+			return false;
+        }
+		
+		 if(!fristname.match(nameReg)){
+		alert(' First name is Invalid');
+	   return false;
+             
+	}
+	if(!lastname.match(nameReg)){
+		alert('Last name is Invalid');
+	   return false;
+             
+	}
+	if(!number.match(phoneReg)){
+		alert('Phone number is Invalid');
+	   return false;
+             
+	}
+	if(!email.match(emailReg)){
+		alert('Email is Invalid');
+	   return false;
+             
+	}
+	if(!password.match(passReg)){
+		alert('In password there is only letter digit @ $ & allowed');
+	   return false;
+             
+	}
+	if(password!=confpassword){
+		alert('Your password did not matched');
+	   return false;
+             
+	}
+	if(dateofdob!=""){
+	   
+        var d = new Date();
+var dd=d.getFullYear();
+dd-=5;
+ var ddd=dd+"-"+"00"+"-"+"00";
+if(dateofdob>ddd){
+ alert('Date of brith is invalid');
+return false;
+ } 
+ }
+		 else{
+		 return true;
+		 } 
+	   
+	  }
+	  //login viladation
+	   function validatelogin(){
+  var loginemail = document.getElementById('emaillogin').value;
+   var loginpwd = document.getElementById('pwdlogin').value;
+     var loginemailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+	   var loginpassReg =  /^[0-9a-zA-Z@$&]+$/;
+		if(loginemail==""){
+	   
+            
+			alert(' login email is required');
+			return false;
+        }
+		if(loginpwd==""){
+	   
+            
+			alert(' login password is required');
+			return false;
+        }
+        if(!loginemail.match(loginemailReg)){
+		alert(' log in Email is Invalid');
+	   return false;
+             
+	}
+	if(!loginpwd.match(loginpassReg)){
+		alert('In login password there is only letter digit @ $ & allowed');
+	   return false;
+             
+	}
+	else{
+		return true;
+	}
+}
+	 
+</script>

@@ -1,0 +1,41 @@
+<?php
+									$com=mysql_query("select * from comment where event_id='$eventid'")or die('event comment selection query error');
+									if(mysql_num_rows($com)>0){
+										while($rowmsg=mysql_fetch_array($com)){
+										$fromcom=$rowmsg[1];
+										$pn = mysql_query("SELECT `profile_picture`.`name`,`user`.`fristname`,`user`.`lastname` FROM `profile_picture` join `user` WHERE `profile_picture`.email='$fromcom' and `user.email`='$fromcom'")or die('profile picture and name selection  query error');
+										$phname=mysql_fetch_array($pn)
+								?>
+									<div class="row">
+									  
+										<div class="col-md-2 col-md-offset-1" style="max-width: 130px; max-height: 70px;">
+											<img src="profile_pictures/<?php echo $phname[0];?>" class="img-responsive">
+										</div>
+										<div class="col-md-9">
+											<div>
+												<strong> <?php echo $phname[1]." ".$phname[2];?> </strong>
+											</div>
+											<div>
+												<?php echo  $rowmsg[3];?> 
+											</div>
+											<div>
+												<p class="reply">Reply</p>
+											</div>
+										</div>
+									</div>
+									
+									<?php
+										 }
+										}
+										else{
+											echo "no comment";
+										}
+									?>
+
+									<br>
+									<br>
+									
+
+									 
+
+									
